@@ -1,4 +1,3 @@
-
 //import $ from 'jquery'
 
 var time = 0;
