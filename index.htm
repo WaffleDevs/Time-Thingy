@@ -7,10 +7,10 @@
       Time thing
     </title>
     <style>
-      body {
+      .body {
         height: 90vh;
         width: 90vw;
-        background-color: #242424
+        background-color: #3f3f3f
       }
 
       .d1 {
@@ -18,18 +18,24 @@
         left: 50%;
         top: 20%;
       }
-      .d2 {
+      #d2 {
         text-align: center;
         left: 50%;
         top: 50%;
       }
-      .d3 {
+      #back {
         text-align: center;
         left: 10%;
-        top: 90%;
+        top: 100%;
+        padding: 15px 32px;
+      }
+      #backb {
+        background-color: #aaaaaa;
+        color: white;
+        border: 2px solid #000000;
       }
       .button {
-        padding: 15px 32px;
+        padding: 15px 27px;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
@@ -113,7 +119,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <div class="d1">
 
-    <body>
+    <body class="body">
       <button id="b1" class='button'>
         Error
       </button>
@@ -133,9 +139,6 @@
         <time class="time">Error</time>
       </p>
       <p>
-        <smh class="smh">Error</smh>
-      </p>
-      <p>
         <timerRunning class="timerRunner">Error</timerRunning>
       </p>
       <script src="time.js"></script>
@@ -144,8 +147,10 @@
       <button id="b6" class='button'>
         Error
       </button>
-    </div>
-    <button type="button" onclick="window.location.href='http://www.google.com/'">Go to Google</button> 
+    </div> 
   </div>
-
+  <body id="back">
+  <button id="backb" class="button" onclick="window.location.href='https://wafflesdev.github.io/'">Go back to the Main Page</button> 
+  </body>
+  
 </html>
