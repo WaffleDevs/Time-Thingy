@@ -22,7 +22,7 @@ $("#b4")
   .on('click', () => timeSet(2) + textUpdate())
 $("#b5")
   .html('-'+ xTime)
- .on('click', () => timeSet(3) + textUpdate())
+  .on('click', () => timeSet(3) + textUpdate())
 $("#b6")
   .html('Change Multiplier: '+ xTime)
   .on('click', () => timeMulti())
@@ -57,13 +57,8 @@ async function timeSet(operation) {
 }
 
 function textUpdate() {
-  var timeInM = Math.floor(time / 60);
-  var timeInH = Math.floor(time / 3600);
-  var timeInD = Math.floor(time / 86400);
-  $("time").text('Time:');
+  $("time").text('Time: ' + time);
   $("timerRunning").text('timerRunning: ' + timerRunning);
-  $("smh").text('Days: ' + timeInD + '.  Hours: ' + timeInH + '.  Minutes: ' + timeInM + '.  Seconds: ' + time);
-
 }
 
 function counter(value) {
